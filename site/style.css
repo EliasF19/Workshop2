@@ -1,0 +1,19 @@
+body {
+    font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#wink {
+    font-size: 60px; /* Augmenter la taille du texte pour plus de visibilité */
+    color: #007bff; /* Changer la couleur du texte */
+    animation: wink 5s ease-in-out infinite; /* Ajuster la durée et le type d'animation */
+}
+
+@keyframes wink {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-20px); } /* Modifier le type d'animation pour un "saut" */
+    75% { transform: translateY(-20px); }
+}
